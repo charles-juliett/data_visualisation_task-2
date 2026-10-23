@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blue Kiln: handmade ceramics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <h1>Blue Kiln</h1>
+      <p>Small-batch ceramics, glazed by hand.</p>
+    </div>
+  </header>
+
+  <div class="wrap layout">
+    <main>
+      <h2 class="section-title">The shelf</h2>
+      <div class="grid" id="products"></div>
+    </main>
+
+    <aside class="cart" aria-labelledby="cart-title">
+      <div class="cart-head">
+        <h2 id="cart-title">Your cart <span id="cart-count" class="badge">0</span></h2>
+        <button type="button" id="clear" class="link">Clear cart</button>
+      </div>
+
+      <p id="empty" class="empty">Your cart is empty. Add a piece from the shelf.</p>
+      <ul id="cart-items" class="cart-items"></ul>
+
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="total" aria-live="polite">$0.00</strong>
+      </div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
